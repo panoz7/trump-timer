@@ -1,0 +1,49 @@
+<html>
+
+    <head>
+        <title>Trump Timer</title>
+
+        <style>
+
+            body {
+                background-color: #777;
+            }
+
+            #timeRemaining {
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 100px;
+            }
+
+            #progress {
+                position: absolute;
+                top: 0;
+                left: 0;   
+                width: 100%;  
+                z-index: -1000;       }
+
+            #progress-whole, #progress-partial {
+                background-color: #ccc;
+            }
+
+            #progress-whole {
+                width: 100%;
+            }
+
+            #progress-partial {
+                height: 1px;
+            }
+
+        </style>
+    </head>
+
+    <p id='timeRemaining'></p>
+
+    <div id='progress'>
+        <div id='progress-whole'></div>
+        <div id='progress-partial'></div>
+    </div>
+
+    <script src='index.js'></script>
+
+</html>
